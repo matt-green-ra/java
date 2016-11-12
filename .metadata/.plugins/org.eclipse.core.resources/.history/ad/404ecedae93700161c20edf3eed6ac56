@@ -1,0 +1,81 @@
+
+public class Student {
+	
+	// data
+	private String name;
+	private int test1,test2,test3;
+	
+	// constructor - default
+	public Student()
+	{
+		name = "";
+		test1 = 0;
+		test2 = 0;
+		test3 = 0;
+	}
+	
+	// constructor - 
+	public Student(String _name, int _test1, int _test2, int _test3)
+	{
+		name = _name;
+		test1 = _test1;
+		test2 = _test2;
+		test3 = _test3;
+	}
+
+	public void setName(String _name)
+	{
+		name = _name;
+	}
+	
+	String getName()
+	{
+		return name;
+	}
+	
+	public void setScore(int whichScore, int score)
+	{
+		if(whichScore == 1)
+			test1 = score;
+		if(whichScore == 2)
+			test2 = score;
+		else
+			test3 = score;
+	}
+	
+	public int getScore(int whichScore)
+	{
+		int value = 0;
+		if(whichScore == 1)
+			value = test1;
+		else if(whichScore == 2)
+			value = test2;
+		else
+			value = test3;
+		
+		return value;
+	}
+	
+	public int getAverage()
+	{
+		return (int)((score1+score2+score3)/3+0.5);
+	}
+	
+	public int getHighScore()
+	{
+		int high = test1;
+		if(test2 > high)
+			high = test2;
+		if(test3 > high)
+			high = test3;
+		return high;
+	}
+	
+	public String toString()
+	{
+		return name + "\nTest 1: "+test1+"\nTest 2: "+test2+ "\nTest 3: "+test3+
+				"\nAverage: "+ getAverage() + "\nHigh Score: "+ getHighScore;
+	}
+	}
+
+}

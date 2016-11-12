@@ -1,0 +1,30 @@
+
+public class Student {
+	
+	// data
+	private String name;
+	private int test1,test2,test3;
+	
+	// constructor - default
+	public Student()
+	{
+		name = "";
+		test1 = 0;
+		test2 = 0;
+		test3 = 0;
+	}
+	
+	// constructor - 
+
+	void setName(name)
+	{
+		
+	}
+	
+	String getName()
+	{
+		
+	}
+	
+	void getScore()
+}

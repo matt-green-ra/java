@@ -1,0 +1,33 @@
+
+/** 
+ * main.java
+ *
+ * Title:			Chapter 2
+ * Description:	    Karel climbs the stairs and removes the beepers
+ * @author			Debbie Klipp
+ * @version			7/23/11
+ */
+
+import kareltherobot.*;
+
+public class SteepleRunner implements Directions 
+{
+
+	public static void task() 
+	{
+	   SteepleRunner karel = new SteepleRunner (1,1,East,1);
+	   karel.runRace();
+	   karel.turnOff();
+		
+	} // task 
+
+	// Main entry point
+	public static void main(String[] args) 
+     {
+		World.setDelay(30);
+		World.readWorld("steeple.txt");
+		World.setVisible();
+		task();
+	}
+}
+

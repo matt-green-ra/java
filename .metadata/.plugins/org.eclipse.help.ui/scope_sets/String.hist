@@ -1,0 +1,4 @@
+#Wed Jun 22 11:34:06 PDT 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=String
